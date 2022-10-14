@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+
+.navbar {
+  .navbar-brand {
+    .Nav-logo {
+      width: 45px;
+      height: 45px;
+      @media (prefers-reduced-motion: no-preference) {
+        animation: logo-spin infinite 20s linear;
+      }
+    }
+  }
+  #basic-navbar-nav {
+    margin-left: auto;
+    @include media-breakpoint-down(lg) { text-align: center; }
+    .nav-item {
+      @include media-breakpoint-up(lg) { padding: .3rem 1.5rem; }
+    }
+  }
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
