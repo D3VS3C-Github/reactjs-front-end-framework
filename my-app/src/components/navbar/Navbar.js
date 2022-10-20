@@ -8,17 +8,30 @@ function BasicExample() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home">
-          <img src={logo} className="Nav-logo" alt="logo" />
-          React-Bootstrap
+        <Navbar.Brand className='fw-bold' href="/">
+          <img src={logo} 
+               className="Nav-logo" 
+               alt="logo" />
+          React Beta.1
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
+
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="/">
+              HOME
+            </Nav.Link>
+            <Nav.Link href="/resources">
+              RESOURCES
+            </Nav.Link>
+            <Nav.Link href="/to-do">
+              TO-DO
+            </Nav.Link>
           </Nav>
+
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
